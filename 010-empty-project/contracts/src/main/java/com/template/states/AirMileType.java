@@ -7,11 +7,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-//public final class AirMileType extends TokenType {
-public class AirMileType extends TokenType {
+public final class AirMileType extends TokenType {
 
-
-        public static final String IDENTIFIER = "AIR";
+    public static final String IDENTIFIER = "AIR";
     public static final int FRACTION_DIGITS = 0;
 
     @NotNull

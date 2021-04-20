@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dad8e80a-cdc4-43b9-8df2-22a8bede5ccb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/contracts/src/main/java/com/template/car/CarTokenContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/contracts/src/main/java/com/template/car/CarTokenType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/contracts/src/main/java/com/template/states/AirMileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/contracts/src/main/java/com/template/states/DummyContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/contracts/src/main/java/com/template/states/TrialToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/res/tokens-workflows.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/flows/IssueFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/flows/MoveFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/flows/RedeemFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/usd/IssueUsdFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/usd/MoveUsdFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/usd/RedeemUsdFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/usd/UsdTokenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../020-first-token/contracts/src/main/java/com/template/states/AirMileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../020-first-token/workflows/res/tokens-workflows.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../010-empty-project/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/contracts/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../010-empty-project/contracts/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../010-empty-project/workflows/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/src/integrationTest/java/com/template/DriverBasedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/integrationTest/java/com/template/DriverBasedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/src/integrationTest/kotlin/com/template/DriverBasedTestK.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../010-empty-project/workflows/src/integrationTest/kotlin/com/template/DriverBasedTestK.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/flows/Initiator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/src/main/java/com/template/flows/Responder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/src/test/java/com/template/FlowTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../010-empty-project/workflows/src/test/java/com/template/NodeDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../020-first-token/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../020-first-token/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../020-first-token/contracts/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../020-first-token/contracts/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../020-first-token/workflows/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../020-first-token/workflows/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/java/com/template/states/AirMileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/main/java/com/template/states/AirMileType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractRedeemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractRedeemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractTestHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractTestHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/java/com/template/flows/FlowTestHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/src/test/java/com/template/flows/FlowTestHelpers.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/contracts/.gradle/" />
+    <ignored path="$PROJECT_DIR$/workflows/.gradle/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractRedeemTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="70" column="31" lean-forward="true" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflows/src/main/java/com/template/flows/MoveFlows.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+              <folding>
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#2113#2114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/IssueFlowsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/corda-node-driver/4.3/5ae0643bb42e1cc9a7efe219b6fe6bca4985b2da/corda-node-driver-4.3.jar!/net/corda/testing/node/StartedMockNode.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="22" column="112" lean-forward="true" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/MoveFlowsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-697">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/FlowTestHelpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r3.corda.lib.tokens/tokens-workflows/1.1/5d7116ea812cf6a515c2e75ba1a95c46f856932f/tokens-workflows-1.1-sources.jar!/com/r3/corda/lib/tokens/workflows/flows/move/MoveTokensUtilities.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflows/src/main/java/com/template/flows/IssueFlows.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>redeemre</find>
+      <find>inputsMayHaveAZeroQuantity</find>
+      <find>Initiator</find>
+      <find>redeemTransactionMustHaveLessInOutputs</find>
+      <find>IssueFlowsTests</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/workflows/src/test/java/com/template/flows/FlowTestHelpers.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="182" />
+    <option name="y" value="117" />
+    <option name="width" value="1695" />
+    <option name="height" value="835" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="states" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="030-tokens-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="030-tokens-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="workflows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="flows" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../token-sdk" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.gradle.running" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.TokenContractRedeemTests.redeemTransactionMustHaveLessInOutputs">
+    <configuration name="TokenContractIssueTests.issueTransactionMustHaveNoInputs" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.template.contracts.TokenContractIssueTests.issueTransactionMustHaveNoInputs&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":contracts:cleanTest" />
+            <option value=":contracts:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TokenContractRedeemTests.inputsMayHaveAZeroQuantity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.template.contracts.TokenContractRedeemTests.inputsMayHaveAZeroQuantity&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":contracts:cleanTest" />
+            <option value=":contracts:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TokenContractRedeemTests.redeemTransactionMustHaveLessInOutputs" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.template.contracts.TokenContractRedeemTests.redeemTransactionMustHaveLessInOutputs&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":contracts:cleanTest" />
+            <option value=":contracts:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TokenContractRedeemTests.redeemTransactionMustHaveLessInOutputs" />
+        <item itemvalue="Gradle.TokenContractRedeemTests.inputsMayHaveAZeroQuantity" />
+        <item itemvalue="Gradle.TokenContractIssueTests.issueTransactionMustHaveNoInputs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dad8e80a-cdc4-43b9-8df2-22a8bede5ccb" name="Default Changelist" comment="" />
+      <created>1613731184077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613731184077</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TokenContractIssueTests_issueTransactionMustHaveNoInputs - 2021.02.19 at 19h 41m 29s.xml">
+      <configuration name="TokenContractIssueTests.issueTransactionMustHaveNoInputs" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TokenContractRedeemTests_inputsMayHaveAZeroQuantity - 2021.02.19 at 19h 41m 57s.xml">
+      <configuration name="TokenContractRedeemTests.inputsMayHaveAZeroQuantity" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TokenContractRedeemTests_redeemTransactionMustHaveLessInOutputs - 2021.02.19 at 19h 45m 52s.xml">
+      <configuration name="TokenContractRedeemTests.redeemTransactionMustHaveLessInOutputs" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="TokenContractRedeemTests_redeemTransactionMustHaveLessInOutputs - 2021.02.19 at 19h 46m 07s.xml">
+      <configuration name="TokenContractRedeemTests.redeemTransactionMustHaveLessInOutputs" configurationId="GradleRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2590604" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3414264" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5523521" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19619326" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="10" />
+      <window_info anchor="bottom" id="Log Analyzer" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="SOQL Query" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="パレット" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractIssueTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-677">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractMoveTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="110" column="66" lean-forward="true" selection-start-line="110" selection-start-column="66" selection-end-line="110" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r3.corda.lib.tokens/tokens-contracts/1.1/d3cbf2049eba4fa263b9b10a446cd46ea9cbc7ac/tokens-contracts-1.1-sources.jar!/com/r3/corda/lib/tokens/contracts/commands/TokenCommand.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r3.corda.lib.tokens/tokens-workflows/1.1/840e479d2dadd9060bf2016c649e69eae57a44a4/tokens-workflows-1.1.jar!/com/r3/corda/lib/tokens/workflows/flows/redeem/RedeemTokensFlow.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/main/java/com/template/flows/RedeemFlows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="76" column="47" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r3.corda.lib.tokens/tokens-workflows/1.1/5d7116ea812cf6a515c2e75ba1a95c46f856932f/tokens-workflows-1.1-sources.jar!/com/r3/corda/lib/tokens/workflows/flows/move/MoveTokensUtilities.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r3.corda.lib.tokens/tokens-workflows/1.1/840e479d2dadd9060bf2016c649e69eae57a44a4/tokens-workflows-1.1.jar!/com/r3/corda/lib/tokens/workflows/flows/move/AbstractMoveTokensFlow.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r3.corda.lib.tokens/tokens-workflows/1.1/5d7116ea812cf6a515c2e75ba1a95c46f856932f/tokens-workflows-1.1-sources.jar!/com/r3/corda/lib/tokens/workflows/flows/move/AbstractMoveTokensFlow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/corda-node-driver/4.3/5ae0643bb42e1cc9a7efe219b6fe6bca4985b2da/corda-node-driver-4.3.jar!/net/corda/testing/node/MockNetworkParameters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/FlowTestHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/src/test/java/com/template/contracts/TokenContractRedeemTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="70" column="31" lean-forward="true" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/main/java/com/template/flows/MoveFlows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+          <folding>
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/main/java/com/template/flows/IssueFlows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/corda-node-driver/4.3/5ae0643bb42e1cc9a7efe219b6fe6bca4985b2da/corda-node-driver-4.3.jar!/net/corda/testing/node/MockNetwork.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/RedeemFlowsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/MoveFlowsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflows/src/test/java/com/template/flows/IssueFlowsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/corda-node-driver/4.3/5ae0643bb42e1cc9a7efe219b6fe6bca4985b2da/corda-node-driver-4.3.jar!/net/corda/testing/node/StartedMockNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" column="112" lean-forward="true" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.8 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

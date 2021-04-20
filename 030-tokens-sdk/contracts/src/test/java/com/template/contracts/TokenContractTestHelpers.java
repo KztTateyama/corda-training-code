@@ -7,7 +7,8 @@ import net.corda.core.contracts.Amount;
 import net.corda.core.identity.Party;
 import org.jetbrains.annotations.NotNull;
 
-public interface TokenContractTestHelpers {
+//public interface TokenContractTestHelpers {
+public class TokenContractTestHelpers {
     @NotNull
     static FungibleToken create(
             @NotNull final IssuedTokenType tokenType,

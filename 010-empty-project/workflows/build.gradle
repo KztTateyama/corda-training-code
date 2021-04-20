@@ -12,6 +12,11 @@ cordapp {
         licence "Apache License, Version 2.0"
         versionId 1
     }
+
+    signing {
+        enabled false
+    }
+
 }
 
 sourceSets {
@@ -62,7 +67,14 @@ dependencies {
     testCompile "$corda_release_group:corda-node-driver:$corda_release_version"
 
     // CorDapp dependencies.
+    cordapp "$confidential_id_release_group:ci-workflows:$confidential_id_release_version"
+
+    //token SDK
+    cordapp "$tokens_release_group:tokens-workflows:$tokens_release_version"
+    cordapp "$tokens_release_group:tokens-selection:$tokens_release_version"
+
     cordapp project(":contracts")
+
 }
 
 task integrationTest(type: Test, dependsOn: []) {

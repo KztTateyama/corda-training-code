@@ -19,6 +19,13 @@ buildscript {
         //springboot
         spring_boot_version = '2.0.2.RELEASE'
         spring_boot_gradle_plugin_version = '2.0.2.RELEASE'
+        // token SDK
+        tokens_release_version = constants.getProperty("tokensReleaseVersion")
+        tokens_release_group = constants.getProperty("tokensReleaseGroup")
+
+        confidential_id_release_version = constants.getProperty("confidentialIdReleaseVersion")
+        confidential_id_release_group = constants.getProperty("confidentialIdReleaseGroup")
+
     }
 
     repositories {
@@ -48,6 +55,11 @@ allprojects {
         mavenCentral()
         maven { url 'https://software.r3.com/artifactory/corda' }
         maven { url 'https://jitpack.io' }
+
+        //token SDK
+        maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda-lib' }
+        maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda-lib-dev' }
+        
     }
 
     tasks.withType(JavaCompile) {
@@ -95,6 +107,14 @@ dependencies {
     cordaCompile "org.apache.logging.log4j:log4j-slf4j-impl:${log4j_version}"
     cordaCompile "org.apache.logging.log4j:log4j-web:${log4j_version}"
     cordaCompile "org.slf4j:jul-to-slf4j:$slf4j_version"
+
+    // Token SDK dependencies.
+    cordapp "$confidential_id_release_group:ci-workflows:$confidential_id_release_version"
+    cordapp "$tokens_release_group:tokens-contracts:$tokens_release_version"
+    cordapp "$tokens_release_group:tokens-workflows:$tokens_release_version"
+    cordapp "$tokens_release_group:tokens-money:$tokens_release_version"
+    cordapp "$tokens_release_group:tokens-selection:$tokens_release_version"
+
 }
 
 cordapp {
@@ -121,6 +141,15 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             deploy = false
         }
         cordapp project(':contracts')
+        cordapp (project(':workflows')) {
+            config project.file("res/tokens-workflows.conf") // About this in an moment
+        }
+// Token SDK dependencies.
+        cordapp "$confidential_id_release_group:ci-workflows:$confidential_id_release_version"
+        cordapp "$tokens_release_group:tokens-contracts:$tokens_release_version"
+        cordapp "$tokens_release_group:tokens-workflows:$tokens_release_version"
+        cordapp "$tokens_release_group:tokens-money:$tokens_release_version"
+        cordapp "$tokens_release_group:tokens-selection:$tokens_release_version"
     }
     node {
         name "O=Notary,L=London,C=GB"
@@ -130,6 +159,7 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             address("localhost:10003")
             adminAddress("localhost:10043")
         }
+        cordapps.clear()
     }
     node {
         name "O=PartyA,L=London,C=GB"

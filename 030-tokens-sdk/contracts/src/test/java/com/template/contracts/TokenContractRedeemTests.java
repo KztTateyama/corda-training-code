@@ -4,6 +4,7 @@ import com.r3.corda.lib.tokens.contracts.FungibleTokenContract;
 import com.r3.corda.lib.tokens.contracts.commands.RedeemTokenCommand;
 import com.r3.corda.lib.tokens.contracts.types.IssuedTokenType;
 import com.template.states.AirMileType;
+import com.template.states.AirMileType.*;
 import net.corda.core.identity.CordaX500Name;
 import net.corda.core.identity.Party;
 import net.corda.testing.contracts.DummyContract;
